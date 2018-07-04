@@ -1,0 +1,39 @@
+{
+  "name": "meanapppizza",
+  "version": "1.0.0",
+  "description": "MEAN STACK APPLICATION FOR ONLINE PIZZA ORDER",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "debug": "nodemon --inspect server.js"
+  },
+  "keywords": [
+    "pizza",
+    "mean",
+    "stack",
+    "angular",
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "Ratko Korlevski",
+  "license": "ISC",
+  "dependencies": {
+    "async-waterfall": "^0.1.5",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.17",
+    "mongoose-title-case": "0.0.4",
+    "mongoose-validator": "^2.0.2",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.4",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0"
+  }
+}
