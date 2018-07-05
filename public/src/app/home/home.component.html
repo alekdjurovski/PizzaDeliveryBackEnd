@@ -1,0 +1,90 @@
+<app-pizza [detail]="pizza" *ngFor="let pizza of pizzas;">
+</app-pizza>
+<!-- <form id="capricciosa">
+  <img src="../../assets/images/kapricioza.jpg" width="250" height="150">
+  <h1>Capricciosa</h1>
+  <p>pizza dough, tomato sauce, mozzarella, mushrooms, ham, black olives</p>
+  <div>
+    <label for="size"><p>Size: </p></label>
+    <input type="radio" class="inputbutton" name="size" checked (click)="onSizeChange('M')" />M
+    <input type="radio" class="inputbutton2" name="size" (click)="onSizeChange('L')" />L
+  </div>
+  <div>
+    <label for="quantity"><p>Quantity:</p></label>
+    <input type="number" name="quantity" class="inputbutton" min="1" max="10" value="1" id="quantity" [(ngModel)]="quantity"/>
+  </div>
+  <div class="price">
+    <p>Price: {{(totalPrice * quantity)}}</p>
+  </div>
+  <div class="buttons">
+    <button id="btnAddToCart">Add to Cart</button>
+    <button id="btnEditPizza">Edit Pizza</button>
+  </div>
+</form>
+
+ <form id="margherita">
+  <img src="../../assets/images/margarita.jpg" width="250" height="150">
+  <h1>Margherita</h1>
+  <p>pizza dough, tomato sauce, mozzarella cheese, tomatoes, ham, fresh pepper, olives</p>
+  <div>
+    <label for="size"><p>Size: </p></label>
+    <input type="radio" class="inputbutton" name="size" checked (click)="onSizeChange('M')" />M
+    <input type="radio" class="inputbutton2" name="size" (click)="onSizeChange('L')" />L
+  </div>
+  <div>
+    <label for="quantity"><p>Quantity:</p></label>
+    <input type="number" class="inputbutton" min="1" max="10" value="1" id="quantityMargherita" [(ngModel)]="quantityMargherita"
+    />
+  </div>
+  <div class="price">
+    <p>Price: {{(totalPrice * quantityMargherita)}}</p>
+  </div>
+  <div class="buttons">
+    <button id="btnAddToCart">Add to Cart</button>
+    <button id="btnEditPizza">Edit Pizza</button>
+  </div>
+</form>
+
+<form id="supreme">
+  <img src="../../assets/images/supreme.jpg" width="250" height="150">
+  <h1>Supreme</h1>
+  <p>pizza dough, pizza sauce, pepperoni, sausages, mushrooms, peppers, olives, cheese</p>
+  <div>
+    <label for="size"><p>Size: </p></label>
+    <input type="radio" class="inputbutton" name="size" checked (click)="onSizeChange('M')" />M
+    <input type="radio" class="inputbutton2" name="size" (click)="onSizeChange('L')" />L
+  </div>
+  <div>
+    <label for="quantity"><p>Quantity:</p></label>
+    <input type="number" class="inputbutton" min="1" max="10" value="1" id="quantitySupreme" [(ngModel)]="quantitySupreme" />
+  </div>
+  <div class="price">
+    <p>Price: {{(totalPrice * quantitySupreme)}}</p>
+  </div>
+  <div class="buttons">
+    <button id="btnAddToCart">Add to Cart</button>
+    <button id="btnEditPizza">Edit Pizza</button>
+  </div>
+</form>
+
+<form id="quattro">
+  <img src="../../assets/images/quattro-stagioni.jpg" width="250" height="150">
+  <h1>Quattro stagioni</h1>
+  <p>pizza dough, tomatoes, mushrooms, garlic, mozzarella cheese, ham, black olives</p>
+  <div>
+    <label for="size"><p>Size: </p></label>
+    <input type="radio" class="inputbutton" name="size" checked (click)="onSizeChange('M')" />M
+    <input type="radio" class="inputbutton2" name="size" (click)="onSizeChange('L')" />L
+  </div>
+  <div>
+    <label for="quantity"><p>Quantity:</p></label>
+    <input type="number" class="inputbutton" min="1" max="10" value="1" id="quantityQuattro" [(ngModel)]="quantityQuattro" />
+  </div>
+  <div class="price">
+    <p>Price: {{(totalPrice * quantityQuattro)}}</p>
+  </div>
+  <div class="buttons">
+    <button id="btnAddToCart">Add to Cart</button>
+    <button id="btnEditPizza">Edit Pizza</button>
+  </div>
+</form> -->

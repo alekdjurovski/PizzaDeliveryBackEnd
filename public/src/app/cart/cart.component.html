@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="well">Shopping Cart</h1>
+  <hr>
+  <p *ngIf="shoppingCart.items.length === 0">Your cart is empty</p>
+  <table class="table table-bordered" *ngIf="shoppingCart.items.length > 0">
+    <tr>
+      <th>Item</th>
+      <th>Size</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let item of shoppingCart.items; let i = index;">
+      <td>{{ item.name }}</td>
+      <td>{{ item.size }}</td>
+      <td>{{ item.amount }}</td>
+      <td>{{ item.price}}</td>
+      <button id="deletebtn" (click)="removeItemFromCart(i)">x</button>
+    </tr>
+  </table>
+  <h4 *ngIf="shoppingCart.items.length > 0">Total: {{ shoppingCart.total.toFixed(2) }}</h4>
+  <button class="btn" (click)="checkout()">Checkout</button>
+  <a (click)="emptyCart()">
+    <button class="btn" type="submit">Clear Cart</button>
+  </a>
+</div>

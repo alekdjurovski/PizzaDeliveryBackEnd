@@ -1,0 +1,52 @@
+    [
+        {
+            "name": "Tomato Sauce",
+            "price": 1,
+            "amount": 0
+        },
+        {
+            "name": "Fresh Tomato",
+            "price": 4,
+            "amount": 0
+        },
+        {
+            "name": "Fresh Peppers",
+            "price": 3,
+            "amount": 0
+        },
+        {
+            "name": "Olives",
+            "price": 2,
+            "amount": 0
+        },
+        {
+            "name": "Mushrooms",
+            "price": 3,
+            "amount": 0
+        },
+        {
+            "name": "Feta Cheese",
+            "price": 3,
+            "amount": 0
+        },
+        {
+            "name": "Mozzarella",
+            "price": 2,
+            "amount": 0
+        },
+        {
+            "name": "Smoked Ham",
+            "price": 3,
+            "amount": 0
+        },
+        {
+            "name": "Bacon",
+            "price": 2,
+            "amount": 0
+        },
+        {
+            "name": "Oregano",
+            "price": 1,
+            "amount": 0
+        }
+    ]

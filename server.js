@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();                                     // (to make the application run)
-const port = process.env.PORT || 7000;
+const port = process.env.PORT || 8080;
 const morgan = require('morgan');                             // (HTTP request logger middleware)
 const mongoose = require('mongoose');                           // (object data modeling to simplify interactions with MongoDB)
 const bodyParser = require('body-parser');// (for parsing incoming requests)

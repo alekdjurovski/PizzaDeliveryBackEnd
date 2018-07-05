@@ -1,0 +1,25 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="container">
+  <div class="containerLeft">
+    <h2>Orders</h2>
+    <ol>
+      <li *ngFor="let order of orders; let i = index;" [ngClass]="{'line2': i % 2 === 1}">
+        <span>Status: {{order.orderStatus}}</span>
+        &nbsp;
+        |
+        &nbsp;
+        <span>Date: {{order.date | date : 'dd-MMM-yy'}}</span>
+        &nbsp;
+        |
+        &nbsp;
+        <span>Total: {{order.total}}</span>
+        &nbsp;
+        |
+        &nbsp;
+        <span>Items: {{order.items.length}}</span>
+      </li>
+    </ol>
+  </div>
+  
+
+</div>

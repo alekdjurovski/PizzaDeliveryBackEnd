@@ -1,0 +1,41 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="container">
+  <div class="row">
+    <div class="colLeft">
+      <h2>Ingredients: </h2>
+        <ol>
+          <li *ngFor="let ingredient of ingredients; let i = index;" [ngClass]="{'line2': i % 2 === 1}">
+            {{ ingredient.name }}
+            <span class="cena"> {{ ingredient.price }}$
+              <button class="btnMinus" (click)="removeIngredient(ingredient.name)">x</button>
+            </span>
+          </li>
+        </ol>
+
+    </div>
+
+
+    <div class="colRight">
+      <form id="addIngredients">
+        <h3>Add new ingredient</h3>
+        <p>
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Ingredients Name" name="name" #name="ngModel" id="name" [(ngModel)]="ingredient.name"  required>
+        </p>
+
+        <!-- <p>
+          <label for="quantity"><b>Quantity</b></label>
+          <input type="text" placeholder="Enter Quantity" name="quantity" #name="ngModel" id="quantity" [(ngModel)]="ingredient.quantity"  required>
+        </p> -->
+
+        <p>
+          <label for="price"><b>Price</b></label>
+          <input type="text" placeholder="Enter Price" name="price" #name="ngModel" id="price" [(ngModel)]="ingredient.price"  required>
+        </p>
+
+        <button (click)="addNewIngredient()">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</div>

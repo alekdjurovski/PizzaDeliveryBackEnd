@@ -1,0 +1,52 @@
+div{
+    margin:0px;
+    padding:0px;
+    background-color:lightgrey;
+    height:100%;
+}
+
+h2{
+    margin-left:20%; 
+    margin-top: 100px
+}
+
+.inline{
+    float: right;
+    /* margin-right: 50%; */
+}
+
+label{
+    float: right;
+    margin-right: 55%;
+}
+
+.formDelivery{
+    color:darkblue;
+    font-size:1.4em;
+    margin:20px;
+    margin-left:530px;
+}
+
+.bill{
+    margin-top:100px;
+}
+
+.formBilling{
+    color:darkblue;
+    font-size:1.4em;
+    margin:20px;
+    margin-left:530px;
+    
+    
+}
+
+
+button{
+    border-radius:7px;
+    font-size:25px;
+    color:white;
+    background-color: darkgreen;
+    padding:20px;
+    text-align: center;
+    margin-left: 50%;
+}

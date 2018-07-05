@@ -1,0 +1,29 @@
+<form #pizzaForm="ngForm" novalidate>
+  <!-- <img src={{detail?.imgUrl}} width="250" height="150"/> -->
+  
+  <img src="../../../assets/images/quattro-stagioni.jpg">
+  <h1>{{ detail?.name }}</h1>
+  <p>{{ detail?.description }}</p>
+  <p>
+    <b>Size: </b>
+    <label>
+      <input type="radio" [value]="'M'" name="size" [ngModel]="detail?.size" (ngModelChange)="onSizeChange($event)"  />M
+    </label>
+    <label>
+      <input type="radio" [value]="'L'" name="size" [ngModel]="detail?.size" (ngModelChange)="onSizeChange($event)" />L
+    </label>
+  </p>
+  <p>
+    <b>Quantity: </b>
+    <label>
+      <input type="number" name="quantity" min="1" max="10" value="1" (ngModelChange)="onQuantityChange($event)" [ngModel]="detail?.amount">
+    </label>
+  </p>
+  <p>
+    <b>Price: {{detail?.price}}</b>
+  </p>
+  <div class="buttons">
+    <button type="submit" id="btnAddToCart" (click)="addToCart(this.item)">Add to Cart</button>
+    <!-- <button id="btnEditPizza">Edit Pizza</button> -->
+  </div>
+</form>

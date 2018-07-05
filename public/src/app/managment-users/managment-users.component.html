@@ -1,0 +1,19 @@
+<app-navbar-admin></app-navbar-admin>
+<form>
+  <h2>Users: </h2>
+  <ol>
+    <li *ngFor="let user of users; let i = index;" [ngClass]="{'line2': i % 2 === 1}">
+      <div class="container">
+        <div class="container">
+          <label>{{ user.name }}</label>
+        </div>
+        <div class="container hcenter">
+          <label>{{ user.email }}</label>
+        </div>
+        <div class="container hright">
+          <button class="btnMinus" (click)="removeUser(user.name)">x</button>
+        </div>
+      </div>
+    </li>
+  </ol>
+</form>

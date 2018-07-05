@@ -1,0 +1,7 @@
+body{
+    background: -webkit-linear-gradient(rgb(255, 255, 255, 0.4), rgba(130, 130, 130, 0.1)), url("assets/images/background.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    text-decoration-color: white;
+}
